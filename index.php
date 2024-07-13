@@ -1,4 +1,5 @@
 <?php 
+use App\Router;
 
 session_start();
 
@@ -7,4 +8,5 @@ require_once __DIR__.'/vendor/autoload.php';
 $dotenv = Dotenv\Dotenv::createImmutable(__DIR__);
 $dotenv->load();
 
-include_once(__DIR__.'/views/main.php');
+$routes = require_once(__DIR__.'/routes/web.php');
+(new Router($routes))->dispatch();
