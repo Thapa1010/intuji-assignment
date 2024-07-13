@@ -2,12 +2,12 @@
 This is a simple task managment project using google Calendar with functions like list,create,delete events
 
 ## Technologies
--PHP
--Composer
--Tailwind
+- PHP
+- Composer
+- Tailwind
 
 ## Environment Required
--PHP 8.3
+- PHP 8.3
 
 ## Installation
     Cloning:
