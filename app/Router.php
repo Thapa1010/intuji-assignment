@@ -19,10 +19,15 @@ class Router{
         }
     }
 
-    public function mapControllerMethod(string $handler){
+    public function mapControllerMethod(array $handler){
 
-        list($controllerName,$method) = explode('@',$handler);
+        list($mapping,$guard) = $handler;
+        list($controllerName,$method) = explode('@',$mapping);
 
+        if($guard === 'auth' && !isset(($_SESSION['google_auth_code']))){
+            require(__DIR__.'/../views/errors/401.php');
+            die();
+        }
         $controllerClass = "App\\Controllers\\$controllerName";
         if(class_exists($controllerClass) && method_exists($controllerClass,$method)){
             $instance = new $controllerClass();
