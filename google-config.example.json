@@ -1,0 +1,18 @@
+{
+    "web": {
+        "client_id": "",
+        "project_id": "intuji-assigment",
+        "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+        "token_uri": "https://oauth2.googleapis.com/token",
+        "auth_provider_x509_cert_url": "",
+        "client_secret": "",
+        "redirect_uris": [
+            "http://localhost:8080/google-callback",
+            "http://localhost:8000/google-callback"
+        ],
+        "javascript_origins": [
+            "http://localhost:8080",
+            "http://localhost:8000"
+        ]
+    }
+}
