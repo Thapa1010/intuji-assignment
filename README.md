@@ -17,6 +17,9 @@ This is a simple task managment project using google Calendar with functions lik
 
         cp .env.example .env
 
+        cp google-config.example.json google-config.json
+        Fill the required values in the google-config file
+
     Serve:
         php -S localhost:8080    
 
