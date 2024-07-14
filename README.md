@@ -2,7 +2,7 @@
 This is a simple task managment project using google Calendar with functions like list,create,delete events
 
 ## Demo Video Link
-    [Click to watch demo video](https://drive.google.com/file/d/1akiP2LS95KXdQvNDG9LsDstR8fd1Wffx/view?usp=sharing)
+[Click to watch demo video](https://drive.google.com/file/d/1akiP2LS95KXdQvNDG9LsDstR8fd1Wffx/view?usp=sharing)
     
 ## Technologies
 - PHP
